@@ -1,0 +1,9 @@
+
+id                 : chatcmpl-8beb9a38ad3c42aa84dfdd280d52cd72
+object             : chat.completion
+created            : 1774545094
+model              : meta-llama/llama-3.2-1b-instruct
+choices            : {@{index=0; message=; finish_reason=stop; content_filter_results=}}
+usage              : @{prompt_tokens=36; completion_tokens=8; total_tokens=44; prompt_tokens_details=; completion_tokens_details=}
+system_fingerprint : 
+

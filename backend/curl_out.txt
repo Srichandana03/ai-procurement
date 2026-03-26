@@ -1,0 +1,10 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100     2    0     0  100     2      0     10 --:--:-- --:--:-- --:--:--    10
+100    26  100    24  100     2     58      4 --:--:-- --:--:-- --:--:--    64
+curl: (3) bad range specification in URL position 60:
+model\: \mistralai/Mistral-7B-Instruct-v0.3\, \messages\: [{\role\: \user\, \content\: \Hello\}]}
+                                                           ^
+{"error":"Invalid JSON"}
