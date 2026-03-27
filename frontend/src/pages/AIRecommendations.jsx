@@ -9,7 +9,6 @@ const RequestDetail = () => {
   const [recommendations, setRecommendations] = useState([]);
   const [loading, setLoading] = useState(false);
   const [creatingOrder, setCreatingOrder] = useState(false);
-  const { user } = useAuth();
   const navigate = useNavigate();
 
   useEffect(() => {

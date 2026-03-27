@@ -9,20 +9,19 @@ const PurchaseRequests = () => {
   const { user } = useAuth();
 
   useEffect(() => {
+    const fetchRequests = async () => {
+      try {
+        const endpoint = user.role === 'EMPLOYEE' ? '/requests/my' : '/requests';
+        const response = await api.get(endpoint);
+        setRequests(response.data);
+      } catch (error) {
+        console.error('Error fetching requests:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
     fetchRequests();
-  }, []);
-
-  const fetchRequests = async () => {
-    try {
-      const endpoint = user.role === 'EMPLOYEE' ? '/requests/my' : '/requests';
-      const response = await api.get(endpoint);
-      setRequests(response.data);
-    } catch (error) {
-      console.error('Error fetching requests:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  }, [user.role]);
 
   const getStatusBadge = (status) => {
     const styles = {
